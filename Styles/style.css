@@ -144,13 +144,22 @@ nav {
   align-items: center;
   margin-bottom: 135px;
 }
-.plant-lover-left{
-    width: 100%;
+.plant-lover-left {
+  width: 100%;
+  position: relative;
 }
-.plant-lover-left img{
-    width: 100%;
-    display: block; 
-    object-fit: cover;
+.trust-badge {
+  width: 286px;
+  position: absolute;
+  top: -125px;
+  left: 300px;
+  border-radius: 50%; 
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0,0.5));
+}
+.plant-lover-left img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
 .plant-lover-right-title {
   font-weight: bold;
@@ -222,18 +231,18 @@ nav {
     font-size: 1rem;
   }
   .our-plants {
-  margin-bottom: 40px;
-}
+    margin-bottom: 40px;
+  }
   .plant-lover {
     flex-direction: column;
-    gap:0;
+    gap: 0;
     padding: 8px;
   }
-  .plant-lover-right-title{
+  .plant-lover-right-title {
     margin-top: 18px;
     font-size: 1.5rem;
   }
-  .plant-lover-right-point{
+  .plant-lover-right-point {
     font-size: 1rem;
   }
   .trust-badge {
