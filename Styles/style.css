@@ -112,18 +112,20 @@ nav {
   width: 100%;
 }
 .card-title {
+  color: #111111;
   font-weight: 500;
   font-size: 1.375rem;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 .card-price {
+  color: #111111;
   font-weight: bold;
   font-size: 1.375rem;
   margin-bottom: 30px;
 }
-.card-button {
-  width: 100%;
+.card-button{
+    width: 100%;
 }
 .crd-btn {
   padding: 20px 80px;
@@ -136,21 +138,23 @@ nav {
 }
 /* Responsivenes */
 @media screen and (max-width: 576px) {
-  nav {
-    margin: 28px 16px;
-  }
+nav{
+    padding-left: 16px;
+    padding-right: 16px;
+}
   .nav-item {
     display: none;
   }
   .banner {
     flex-direction: column-reverse;
+    margin-bottom: 65px;
   }
   .banner-left {
     width: 100%;
   }
   .banner-right {
     text-align: left;
-    margin: 28px auto 65px;
+    margin: 0 auto;
   }
   .banner-title {
     font-size: 1.5rem;
@@ -160,4 +164,27 @@ nav {
     font-size: 1rem;
     margin-left: 16px;
   }
+  .our-plants-header{
+    padding: 8px;
+  }
+  .our-plants-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8px;
+  }
+  .card-title {
+  font-size: 1rem;
+}
+.card-price {
+  font-size: 1rem;
+}
+.crd-btn{
+    width: 100%;
+    padding: 20px 30px;
+}
+.our-plants-title {
+  font-size: 1.5rem;
+}
+.our-plants-description {
+  font-size: 1rem;
+}
 }
