@@ -124,8 +124,8 @@ nav {
   font-size: 1.375rem;
   margin-bottom: 30px;
 }
-.card-button{
-    width: 100%;
+.card-button {
+  width: 100%;
 }
 .crd-btn {
   padding: 20px 80px;
@@ -137,13 +137,44 @@ nav {
   font-size: 1rem;
 }
 /* Plants Lover Section */
-
+.plant-lover {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 135px;
+}
+.plant-lover-left{
+    width: 100%;
+}
+.plant-lover-left img{
+    width: 100%;
+    display: block; 
+    object-fit: cover;
+}
+.plant-lover-right-title {
+  font-weight: bold;
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+.plant-lover-right-points {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding: 0;
+}
+.plant-lover-right-point {
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
 /* Responsivenes */
 @media screen and (max-width: 576px) {
-nav{
+  nav {
     padding-left: 16px;
     padding-right: 16px;
-}
+  }
   .nav-item {
     display: none;
   }
@@ -156,17 +187,18 @@ nav{
   }
   .banner-right {
     text-align: left;
-    margin: 0 auto;
+    margin: 28 auto;
   }
   .banner-title {
     font-size: 1.5rem;
     margin-left: 16px;
+    margin-top: 28px;
   }
   .banner-description {
     font-size: 1rem;
     margin-left: 16px;
   }
-  .our-plants-header{
+  .our-plants-header {
     padding: 8px;
   }
   .our-plants-card-container {
@@ -174,19 +206,37 @@ nav{
     padding: 8px;
   }
   .card-title {
-  font-size: 1rem;
-}
-.card-price {
-  font-size: 1rem;
-}
-.crd-btn{
+    font-size: 1rem;
+  }
+  .card-price {
+    font-size: 1rem;
+  }
+  .crd-btn {
     width: 100%;
     padding: 20px 30px;
+  }
+  .our-plants-title {
+    font-size: 1.5rem;
+  }
+  .our-plants-description {
+    font-size: 1rem;
+  }
+  .our-plants {
+  margin-bottom: 40px;
 }
-.our-plants-title {
-  font-size: 1.5rem;
-}
-.our-plants-description {
-  font-size: 1rem;
-}
+  .plant-lover {
+    flex-direction: column;
+    gap:0;
+    padding: 8px;
+  }
+  .plant-lover-right-title{
+    margin-top: 18px;
+    font-size: 1.5rem;
+  }
+  .plant-lover-right-point{
+    font-size: 1rem;
+  }
+  .trust-badge {
+    display: none;
+  }
 }
