@@ -1,12 +1,12 @@
 /* Common */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /* Typography */
@@ -15,8 +15,7 @@
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 .inter-font {
@@ -25,43 +24,89 @@
   font-style: normal;
 }
 /* Nav Bar Design */
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 120px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 120px;
 }
 .nav-item.active .nav-link {
-  color: #252432; 
+  color: #252432;
   font-weight: bold;
 }
-.nav-links{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 18px;
-    gap: 50px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 18px;
+  gap: 50px;
 }
-.nav-link{
-    text-decoration: none;
-    color: #8987A1;
+.nav-link {
+  text-decoration: none;
+  color: #8987a1;
 }
-.nav-cart i{
-    margin-right: 5px;
+.nav-cart i {
+  margin-right: 5px;
 }
-.nav-cart-text{
-    font-weight: bold;
-    color: #252432; 
+.nav-cart-text {
+  font-weight: bold;
+  color: #252432;
+}
+
+/* Banner-design */
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.banner-left{
+    width: 50%;
+}
+.banner-title {
+  font-weight: bold;
+  font-size: 4rem;
+  margin-bottom: 13px;
+}
+.banner-title-cta {
+  color: #e95a08;
+}
+.banner-description {
+    color:rgba(0,0,0,.5) ;
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+.banner-right img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 /* Responsivenes */
-@media screen and (max-width:576px) {
-    nav{
-        margin: 28px 16px;
-    }
-    .nav-item{
-        display: none;
-    }
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 28px 16px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .banner{
+    flex-direction: column-reverse;
+  }
+  .banner-left{
+    width: 100%;
+  }
+  .banner-right{
+    text-align: left;
+    margin: 28px auto 65px;
+  }
+  .banner-title{
+    font-size: 1.5rem;
+    margin-left: 16px;
+  }
+  .banner-description{
+    font-size: 1rem;
+    margin-left:16px;
+  }
 }
