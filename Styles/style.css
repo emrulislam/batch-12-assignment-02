@@ -32,11 +32,36 @@ nav{
     margin-top: 30px;
     margin-bottom: 120px;
 }
+.nav-item.active .nav-link {
+  color: #252432; 
+  font-weight: bold;
+}
 .nav-links{
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
     gap: 50px;
 }
 .nav-link{
     text-decoration: none;
+    color: #8987A1;
+}
+.nav-cart i{
+    margin-right: 5px;
+}
+.nav-cart-text{
+    font-weight: bold;
+    color: #252432; 
+}
+
+/* Responsivenes */
+@media screen and (max-width:576px) {
+    nav{
+        margin: 28px 16px;
+    }
+    .nav-item{
+        display: none;
+    }
 }
