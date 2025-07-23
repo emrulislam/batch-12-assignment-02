@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.txt-cntr {
+  text-align: center;
+}
+
 /* Typography */
 
 .noto-serif-font {
@@ -60,29 +64,76 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-bottom: 120px;
 }
-.banner-left{
-    width: 50%;
+.banner-left {
+  width: 50%;
 }
 .banner-title {
   font-weight: bold;
   font-size: 4rem;
   margin-bottom: 13px;
 }
-.banner-title-cta {
+.cta {
   color: #e95a08;
 }
 .banner-description {
-    color:rgba(0,0,0,.5) ;
-    font-weight: 400;
-    font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 1.375rem;
 }
 .banner-right img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  display: block;
+  object-fit: cover;
 }
-
+/* Our Plant card Section */
+.our-plants {
+  margin-bottom: 210px;
+}
+.our-plants-title {
+  font-weight: bold;
+  font-size: 3.125rem;
+  margin-bottom: 16px;
+}
+.our-plants-description {
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+}
+.our-plants-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.card-image img {
+  width: 100%;
+}
+.card-title {
+  font-weight: 500;
+  font-size: 1.375rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.card-price {
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-bottom: 30px;
+}
+.card-button {
+  width: 100%;
+}
+.crd-btn {
+  padding: 20px 80px;
+  background-color: #e95a08;
+  color: #ffffff;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
 /* Responsivenes */
 @media screen and (max-width: 576px) {
   nav {
@@ -91,22 +142,22 @@ nav {
   .nav-item {
     display: none;
   }
-  .banner{
+  .banner {
     flex-direction: column-reverse;
   }
-  .banner-left{
+  .banner-left {
     width: 100%;
   }
-  .banner-right{
+  .banner-right {
     text-align: left;
     margin: 28px auto 65px;
   }
-  .banner-title{
+  .banner-title {
     font-size: 1.5rem;
     margin-left: 16px;
   }
-  .banner-description{
+  .banner-description {
     font-size: 1rem;
-    margin-left:16px;
+    margin-left: 16px;
   }
 }
