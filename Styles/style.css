@@ -194,7 +194,7 @@ nav {
 /* Latest Deal Section */
 /* Join Section */
 .join {
-  background:url("../assets/news-letter-bg.png") no-repeat center;
+  background: url("../assets/news-letter-bg.png") no-repeat center;
   height: 533px;
   display: flex;
   flex-direction: column;
@@ -272,6 +272,7 @@ nav {
 }
 /* Responsivenes */
 @media screen and (max-width: 576px) {
+  /* Navbar responisiveness */
   nav {
     padding-left: 8px;
     padding-right: 8px;
@@ -279,6 +280,7 @@ nav {
   .nav-item {
     display: none;
   }
+  /* Banner Responsiveness */
   .banner {
     flex-direction: column-reverse;
     margin-bottom: 65px;
@@ -297,6 +299,7 @@ nav {
   .banner-description {
     font-size: 1rem;
   }
+  /* Our Plant Section Responsiveness */
   .our-plants-header {
     padding: 8px;
   }
@@ -323,6 +326,7 @@ nav {
   .our-plants {
     margin-bottom: 40px;
   }
+  /* Plant Lover Section Responsiveness */
   .plant-lover {
     flex-direction: column;
     gap: 0;
@@ -339,6 +343,9 @@ nav {
   .trust-badge {
     display: none;
   }
+  /* Latest Deal Section Responsiveness */
+
+  /* Join Now Newsletter Section Responsiveness */
   .join {
     height: 276px;
     background-size: cover;
@@ -357,6 +364,7 @@ nav {
     padding: 20px 12px;
     width: 103px;
   }
+  /* Footer Responsiveness */
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
     padding: 0 16px;
