@@ -184,8 +184,8 @@ nav {
 /* Responsivenes */
 @media screen and (max-width: 576px) {
   nav {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .nav-item {
     display: none;
@@ -196,19 +196,17 @@ nav {
   }
   .banner-left {
     width: 100%;
+    padding: 0 8px;
   }
   .banner-right {
     text-align: left;
-    margin: 28 auto;
   }
   .banner-title {
     font-size: 1.5rem;
-    margin-left: 16px;
     margin-top: 28px;
   }
   .banner-description {
     font-size: 1rem;
-    margin-left: 16px;
   }
   .our-plants-header {
     padding: 8px;
@@ -239,7 +237,7 @@ nav {
   .plant-lover {
     flex-direction: column;
     gap: 0;
-    padding: 8px;
+    padding: 0 8px;
   }
   .plant-lover-right-title {
     margin-top: 18px;
@@ -247,6 +245,7 @@ nav {
   }
   .plant-lover-right-point {
     font-size: 1rem;
+    margin-left: 0;
   }
   .trust-badge {
     display: none;
